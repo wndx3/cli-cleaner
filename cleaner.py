@@ -1,7 +1,19 @@
 import os
 
-def clear():
-    os.system('cls' if os.name == 'nt' else 'clear')
+# CLEANER FOR BOTH WINDOWS AND MAC
+os.system('CLS' if os.name == 'nt' else 'CLEAR')
 
-# run clear() to clear cli
-clear()
+# CLEANER FOR MAC/LINUX:
+os.system('CLEAR')
+
+# CLEANER FOR WINDOWS:
+os.system('CLS')
+
+
+# EASIER IF YOU PUT IT INSIDE A BLOCK:
+def clean()
+    os.system('CLS' if os.name == 'nt' else 'CLEAR')
+    # os.system('CLEAR')
+    # os.system('CLS')
+
+clean() # <- WILL ERASE CLI
