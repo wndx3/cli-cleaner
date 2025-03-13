@@ -1,11 +1,14 @@
 import os
 import time
 
-def clear():
-    os.system('cls' if os.name == 'nt' else 'clear')
+def clean()
+    if os.system == 'nt':
+        os.system('cls')
+    else:
+        os.system('clear')
 
 for i in range(100):
     print("spam spam")
     
 time.sleep(5)
-clear()
+clean()
