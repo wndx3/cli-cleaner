@@ -1,19 +1,21 @@
 import os
 
-# CLEANER FOR BOTH WINDOWS AND MAC
-os.system('CLS' if os.name == 'nt' else 'CLEAR')
+if os.system == 'nt':
+    os.system('cls')
+else:
+    os.system('clear')
 
-# CLEANER FOR MAC/LINUX:
-os.system('CLEAR')
+# MAC/LINUX
+os.system('clear')
 
-# CLEANER FOR WINDOWS:
-os.system('CLS')
+# WINDOWS
+os.system('cls')
 
-
-# EASIER IF YOU PUT IT INSIDE A BLOCK:
+# FUNCTION
 def clean()
-    os.system('CLS' if os.name == 'nt' else 'CLEAR')
-    # os.system('CLEAR')
-    # os.system('CLS')
+    if os.system == 'nt':
+        os.system('cls')
+    else:
+        os.system('clear')
 
-clean() # <- WILL ERASE CLI
+clean()
