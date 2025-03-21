@@ -13,7 +13,7 @@ os.system('cls')
 
 # FUNCTION
 def clean()
-    if os.system == 'nt':
+    if os.name == 'nt':
         os.system('cls')
     else:
         os.system('clear')
