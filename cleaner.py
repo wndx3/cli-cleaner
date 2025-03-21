@@ -1,8 +1,8 @@
 import os
 
-if os.name == 'nt':
+if os.name == 'nt': # NT == WINDOWS
     os.system('cls')
-else:
+else: # ALL OTHER OS NAME
     os.system('clear')
 
 # MAC/LINUX
@@ -11,11 +11,11 @@ os.system('clear')
 # WINDOWS
 os.system('cls')
 
-# FUNCTION
+# FUNCTION EXAMPLE
 def clean()
     if os.name == 'nt':
         os.system('cls')
     else:
         os.system('clear')
 
-clean()
+clean() # RUNNING THIS WOULD CLEAN TERMINAL
