@@ -2,7 +2,7 @@ import os
 import time
 
 def clean()
-    if os.system == 'nt':
+    if os.name == 'nt':
         os.system('cls')
     else:
         os.system('clear')
